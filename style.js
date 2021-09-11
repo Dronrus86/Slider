@@ -6,30 +6,27 @@ form.addEventListener("click", (e) =>{
     e.preventDefault();
   });
 
-
 let slideIndex = 1;
 showSlides(slideIndex);
-
 
 function nextSlide() {
     showSlides(slideIndex += 1);
 }
-
 function previousSlide() {
     showSlides(slideIndex -= 1);  
 }
-
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-
 function showSlides(n) {
  
     let slides = document.getElementsByClassName("catalog_conditioners");
-    
-   
+
+    if (window.innerWidth >= 991 && slides.dataset.mobile == 'false'){
+
+    }
     if (n > slides.length) {
       slideIndex = 1
     }
@@ -37,10 +34,14 @@ function showSlides(n) {
         slideIndex = slides.length
     }
   
-
-   for (let slide of slides) {
-        slide.style.display = "none";
-    }
-  
-    slides[slideIndex - 1].style.display = "block";  
+    for (let slide of slides) {
+      slide.style.display = "none";
   }
+
+  slides[slideIndex - 1].style.display = "block";  
+}
+
+  
+
+
+

@@ -28,7 +28,18 @@ h2 {
 .slider {
   padding-right: 877px;
 }
+.button_slider button{
+  border: none;
+  text-decoration: none;
+  background-color: #ffffff;
 
+}
+
+.slider button{
+  border: none;
+  text-decoration: none;
+  background-color: #ffffff;
+}
 .product_catalog {
   display: flex;
   justify-content: space-between;

@@ -19,7 +19,8 @@ h2 {
   line-height: 37px;
 }
 
-.header {
+
+#form {
   align-items: center;
   display: flex;
   justify-content: space-between;

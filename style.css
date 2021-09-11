@@ -29,6 +29,7 @@ h2 {
 .slider {
   padding-right: 877px;
 }
+.active,
 .button_slider button {
   border: none;
   text-decoration: none;
